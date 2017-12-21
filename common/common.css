@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background: rgb(190, 190, 190);
+}
+p{
+    text-indent: 2em;
+}
+ul{
+    padding-left: 20px;
+}
+li{
+    padding: 5px 0;
+}
+.pull-left{
+    float: left;
+}
+.inline-block{
+    display: inline-block;
+}
+.t-center{
+    text-align: center;
+}
+.pt20{
+    padding-top: 10px;
+}
+.step{
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    color: rgb(102, 102, 102);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1s;
+}
+.flex{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-1{
+    flex: 1;
+}
+.f-center{
+    justify-content: center;
+}
+.step.active{
+    opacity: 1;
+    z-index: 100;
+}
+.step:first-child,.step:last-child{
+    background-image: linear-gradient(135deg, #01a5e3 0,#0079c2 50%,#0085cf 50%, #008ed8 80%,#e4e4e4 80%);
+}
+.step .cover-content{
+    display: flex;
+    align-items:center;
+    height: 72%;
+    line-height: 1.5;
+    color: #fff;
+}
+.step .cover-content .title{
+    text-align: center;
+    width: 100%;
+}
+.step .cover-content .author{
+    width: 100%;
+    position: absolute;
+    bottom: 34%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.step .cover-content .thanks{
+    padding-left: 20%;
+    font-size: 60px;
+}
+.step .cover-footer{
+    height: 28%;
+    background: url("../common/images/footer.png") no-repeat 15% center;
+    background-color: rgba(255,255,255,.5);
+}
+.step.content-item .item-title{
+    color: rgb(0,153,255);
+    font-weight: 700;
+    background-color: rgb(220,222,221);
+    margin: 20px 0;
+    padding: 15px 0 15px 40px;
+    background-image: url("images/header.png"),linear-gradient(135deg, transparent 0,transparent 65%,rgb(201,201,203) 65%, rgb(201,201,203) 70%,rgb(0,127,204) 70%,rgb(0,127,204) 94%,rgb(255,255,255) 94%);
+    background-repeat: no-repeat;
+    background-position: 91% center;
+}
+.step.content-item .content{
+    padding: 10px 20px;
+}
+.step.content-item .content img{
+    max-height: 100%;
+}
+.step.content-item .title-list{
+    padding-left: 50px;
+}
+.step.content-item .title-list li{
+    padding: 10px 0;
+}

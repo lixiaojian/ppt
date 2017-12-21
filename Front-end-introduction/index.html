@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <meta http-equiv="Cache-Control" content="max-age=300"/>
+    <title>前端简介</title>
+    <link rel="stylesheet" href="../common/common.css">
+</head>
+<body>
+<div id="impress">
+    <!--封面-->
+    <div id="cover" class="step" data-x="0" data-y="0" data-scale="4">
+        <div class="cover-content">
+            <div class="title">
+                <h2 style="padding-bottom: 4%">前端的发展史</h2>
+                <div class="author">
+                    <div>IT总部数据云公司商用产品研发中心商用产品开发部</div>
+                    <div>李晓健 2018-02</div>
+                </div>
+            </div>
+        </div>
+        <div class="cover-footer"></div>
+    </div>
+
+    <div id="what" class="step content-item" data-x="-1500" data-y="-2500">
+        <h4 class="item-title">什么是前端？</h4>
+        <div class="content">
+            维基百科：
+            <p>
+                前端Front-end和后端back-end是描述进程开始和结束的通用词汇。前端作用于采集输入信息，后端进行处理。计算机程序的界面样式，视觉呈现属于前端。
+            </p>
+            <div class="pt20">通俗的说
+                <p>前端：针对浏览器的开发，代码在浏览器运行 </p>
+                <p>后端：针对服务器的开发，代码在服务器运行 </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="epoch_list" class="step content-item" data-x="-1500" data-y="-2500">
+        <h4 class="item-title">前端的各个时代</h4>
+        <div class="content">
+            <ul class="title-list">
+                <li>简单明快的早期时代</li>
+                <li>后端为主的 MVC 时代</li>
+                <li>Ajax 带来的 SPA 时代</li>
+                <li>前端为主的 MV* 时代</li>
+                <li>Node 带来的全栈时代</li>
+            </ul>
+        </div>
+    </div>
+    <div id="epoch_1" class="step content-item" data-x="-1500" data-y="-2500">
+        <h4 class="item-title">简单明快的早期时代</h4>
+        <div class="content flex flex-row">
+            <div class="flex-1 t-center">
+                <img src="images/img1.jpeg" alt="">
+            </div>
+            <div class="flex-1">
+                <p>页面由 JSP、PHP 等工程师在服务端生成，浏览器负责展现。基本上是服务端给什么浏览器就展现什么</p>
+                <ul class="inline-block">
+                    <li style="list-style: none">问题：</li>
+                    <li>Service 越来越多，调用关系变复杂，前端搭建本地环境不再是一件简单的事。</li>
+                    <li>JSP 等代码的可维护性越来越差。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="epoch_2" class="step content-item" data-x="-1500" data-y="-2500">
+        <h4 class="item-title">后端为主的 MVC 时代</h4>
+        <div class="content flex flex-row">
+            <div class="flex-1 t-center">
+                <img src="images/img2.jpeg" alt="">
+            </div>
+            <div class="flex-1">
+                <p>为了降低复杂度，以后端为出发点，有了 Web Server 层的架构升级，比如 Structs、Spring MVC 等，这是后端的 MVC 时代。为了让 View 层更简单干脆，还可以选择 Velocity、Freemaker 等模板，使得模板里写不了 Java 代码。看起来是功能变弱了，但正是这种限制使得前后端分工更清晰。</p>
+                <ul class="inline-block">
+                    <li style="list-style: none">问题：</li>
+                    <li>前端开发重度依赖开发环境。</li>
+                    <li>前后端职责依旧纠缠不清。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="epoch_3" class="step content-item" data-x="-1500" data-y="-2500">
+        <h4 class="item-title">Ajax 带来的 SPA 时代</h4>
+        <div class="content flex flex-row">
+            <div class="flex-1 t-center">
+                <img src="images/img3.jpeg" alt="">
+            </div>
+            <div class="flex-1">
+                <p>2004 年 Gmail 像风一样的女子来到人间，很快 2005 年 Ajax 正式提出，加上 CDN 开始大量用于静态资源存储，于是出现了 JavaScript 王者归来的 SPA （Single Page Application 单页面应用）时代。</p>
+                <ul class="inline-block">
+                    <li style="list-style: none">问题：</li>
+                    <li>前后端接口的约定。</li>
+                    <li>前端开发的复杂度控制。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="epoch_4" class="step content-item" data-x="-1500" data-y="-2500" data-z="1000">
+        <h4 class="item-title">前端为主的 MV* 时代</h4>
+        <div class="content flex flex-row">
+            <div class="flex-1 t-center">
+                <img src="images/img4.jpeg" alt="">
+            </div>
+            <div class="flex-1">
+                <p>为了降低前端开发复杂度，除了 Backbone，还有大量框架涌现，比如 EmberJS、KnockoutJS、AngularJS 等等。这些框架总的原则是先按类型分层，比如 Templates、Controllers、Models，然后再在层内做切分，如下图：</p>
+                <ul class="inline-block">
+                    <li style="list-style: none">好处：</li>
+                    <li>前后端职责很清晰。</li>
+                    <li>前端开发的复杂度可控。</li>
+                    <li>部署相对独立</li>
+                </ul>
+                <ul class="inline-block">
+                    <li style="list-style: none">问题：</li>
+                    <li>代码不能复用。</li>
+                    <li>全异步，对 SEO 不利。</li>
+                    <li>性能并非最佳，特别是移动互联网环境下</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="epoch_5" class="step content-item" data-x="-1500" data-y="-2500">
+        <h4 class="item-title">Node 带来的全栈时代</h4>
+        <div class="content flex flex-row">
+            <div class="flex-1 t-center">
+                <img src="images/img5.png" alt="">
+            </div>
+            <div class="flex-1">
+                <p>前端为主的 MV* 模式解决了很多很多问题，但如上所述，依旧存在不少不足之处。随着 Node.js 的兴起，JavaScript 开始有能力运行在服务端。这意味着可以有一种新的研发模式：</p>
+                <ul>
+                    <li style="list-style: none">好处：</li>
+                    <li>Front-end UI layer 处理浏览器层的展现逻辑。</li>
+                    <li>Back-end UI layer 处理路由、模板、数据获取、cookie 等。</li>
+                    <li>Web Server 层也是 JavaScript 代码，这意味着部分代码可前后复用，需要 SEO 的场景可以在服务端同步渲染</li>
+                </ul>
+                <ul>
+                    <li style="list-style: none">挑战：</li>
+                    <li>需要前端对服务端编程有更进一步的认识。比如 network/tcp、PE 等知识的掌握。</li>
+                    <li>Node 层与 Java(或其他服务层) 层的高效通信。。</li>
+                    <li>对部署、运维层面的熟练了解，需要更多知识点和实操经验</li>
+                    <li>大量历史遗留问题如何过渡。这可能是最大最大的阻力。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--感谢-->
+    <div id="thanks" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <div class="cover-content">
+            <div class="thanks">
+                <h2>THANK YOU</h2>
+                <h4>谢谢</h4>
+            </div>
+        </div>
+        <div class="cover-footer"></div>
+    </div>
+</div>
+<script src="../lib/impress/impress.js"></script>
+<script>
+    function createStyle() {
+        var width = document.body.clientWidth;
+        var height = document.body.clientHeight;
+        var nod = document.createElement('style'),
+        str = '.step{width:'+parseInt(width*0.98)+'px;height:'+parseInt(height*0.96)+'px;}';
+        nod.type='text/css';
+        if(nod.styleSheet){         //ie下
+            nod.styleSheet.cssText = str;
+        } else {
+            nod.innerHTML = str;       //或者写成 nod.appendChild(document.createTextNode(str))
+        }
+        document.getElementsByTagName('head')[0].appendChild(nod);
+    }
+    createStyle();
+   impress().init();
+</script>
+</body>
+</html>
