@@ -6,11 +6,12 @@
     <meta http-equiv="Cache-Control" content="max-age=300"/>
     <title>前端简介</title>
     <link rel="stylesheet" href="../common/common.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <div id="impress">
     <!--封面-->
-    <div id="cover" class="step wellcome" data-x="-4000" data-y="-1500" >
+    <div id="cover" class="step wellcome" data-x="-3000" data-y="-1500" >
         <div class="cover-content">
             <div class="title">
                 <h2 style="padding-bottom: 4%">前端的发展史</h2>
@@ -22,7 +23,7 @@
         </div>
         <div class="cover-footer"></div>
     </div>
-    <div id="what" class="step content-item" data-x="-2000" data-y="-1500" data-rotate="360">
+    <div id="what" class="step content-item" data-x="-1000" data-y="-1500" data-rotate="360">
         <h4 class="item-title">什么是前端？</h4>
         <div class="content">
             维基百科：
@@ -35,7 +36,7 @@
             </div>
         </div>
     </div>
-    <div id="fe_stage" class="step content-item" data-x="0" data-y="-1500" data-rotate="720">
+    <div id="fe_stage" class="step content-item" data-x="1000" data-y="-1500" data-rotate="720">
         <h4 class="item-title">前端的舞台（浏览器）</h4>
         <div class="content">
             <div class="t-center">主流的浏览器发展历史</div>
@@ -69,7 +70,7 @@
                     <td>消失</td>
                 </tr>
                 <tr>
-                    <td>1996年</td>
+                    <td>1995年</td>
                     <td>IE</td>
                     <td>微软</td>
                     <td>美国</td>
@@ -107,27 +108,55 @@
             <p class="mark">详情：<a target="_blank" href="http://www.iefans.net/wangye-liulanqi-fazhan-xiangshi/">网页浏览器的发展详史</a></p>
         </div>
     </div>
-    <div id="browser_war" class="step content-item" data-x="2000" data-y="-1500" data-z="1000">
+    <div id="browser_war" data-index="1" data-max="3" class="step content-item" data-x="3000" data-y="-1500" data-z="1000">
         <h4 class="item-title">浏览器之争</h4>
         <div class="content">
             <ul class="title-list">
-                <li>第一次大战：微软IE完胜网景（1995年-2002年)</li>
-                <li>第二次大战：市场百家争鸣 (2003年-2011年)</li>
-                <li>第三次大战：移动入口之争 (2012年-至今)</li>
+                <li class="item-1">
+                    第一次大战：微软IE完胜网景（1995年-2002年)
+                    <p class="">
+                        开始在数年时间内，网景浏览器占据了几乎全部浏览器市场。后来，微软将IE浏览器与Windows操作系统捆绑营销，市场份额不断扩大，完胜网景浏览器
+                    </p>
+                </li>
+                <li class="item-2">
+                    第二次大战：市场百家争鸣 (2003年-2011年)
+                    <p>微软IE绝对垄断局面被打破，Safari、Chrome、Firefox等浏览器推出，大型互联网公司纷纷加入了浏览器战争，推出本企业浏览器，并嵌入了各种特色互联网服务，力图通过互联网入口浏览器将用户和流量导向本企业服务。</p>
+                </li>
+                <li class="item-3">
+                    第三次大战：移动入口之争 (2012年-至今)
+                    <p>随着移动互联网的快速发展，各类移动智能终端快速普及应用，移动智能终端的上网应用变得越来越普遍。</p>
+                </li>
             </ul>
-            <p>一、开始在数年时间内，网景浏览器占据了几乎全部浏览器市场。后来，微软将IE浏览器与Windows操作系统捆绑营销，市场份额不断扩大，完胜网景浏览器</p>
-            <p>二、微软IE绝对垄断局面被打破，Safari、Chrome、Firefox等浏览器推出，大型互联网公司纷纷加入了浏览器战争，推出本企业浏览器，并嵌入了各种特色互联网服务，力图通过互联网入口浏览器将用户和流量导向本企业服务。</p>
-            <p>三、随着移动互联网的快速发展，各类移动智能终端快速普及应用，移动智能终端的上网应用变得越来越普遍。</p>
         </div>
     </div>
-    <div id="epoch_list" class="step content-item" data-x="-4000" data-y="0">
+    <div id="ie_version" data-index="1" data-max="13" class="step content-item st-1" data-x="3000" data-y="-1500" data-z="1000">
+        <h4 class="item-title">IE有版本发布时间</h4>
+        <div class="content">
+            <ul>
+                <li>1995年发布了IE 1，这是IE的第一个版本</li>
+                <li>1995年又发布了IE 2，它复制了网景浏览器的若干项功能及设计</li>
+                <li>1996年发布了IE 3，推出了一个面向IE浏览器的Jscript,ActiveX插件等</li>
+                <li>1997年发布了IE 4，微软将IE 4.0集成至了Windows操作系统中</li>
+                <li>1999年发布了IE 5，开始占领全球市场</li>
+                <li>2001年发布了IE 6，因有安全隐患问题，被冠以“史上最差科技产品”的头衔</li>
+                <li>2006年发布了IE 7，因升级间隔时间太长,为如Mozilla Firefox和其他浏览器创造了机会</li>
+                <li>2009年发布了IE 8，来得太晚，微软在浏览器市场的份额已开始流失,出现两个竞争对手分别是Mozilla Firefox和谷歌Chrome</li>
+                <li>2011年发布了IE 9，将重心转移至HTML 5、CSS3、XHTML以及其他功能改善方面</li>
+                <li>2012年发布了IE 10，已经很不错了</li>
+                <li>2013年发布了IE 11，已经很不错了</li>
+                <li>2015年发布了Microsoft Edge，可能是想摆脱IE造成的阴影</li>
+                <li>2016年1月，微软宣布停止对IE8,IE9,IE10发布更新</li>
+            </ul>
+        </div>
+    </div>
+    <div id="epoch_list" data-index="1" data-max="2" class="step content-item" data-x="-3000" data-y="0">
         <h4 class="item-title">JAVASCRIPT的发展史</h4>
         <div class="content t-center">
-            <p>JavaScript诞生于1995年。起初它的主要目的是处理以前由服务器端负责的一些表单验证。1995网景公司发布LiveScript,Netscape为了搭上媒体热炒Java的顺风车，临时把LiveScript改名为JavaScript，所以从本质上来说JavaScript和Java没什么关系。JavaScript 1.0获得了巨大的成功，Netscape随后在Netscape Navigator 3（网景浏览器）中发布了JavaScript 1.1。之后作为竞争对手的微软在自家的IE3中加入了名为JScript（名称不同是为了避免侵权）的JavaScript实现。而此时市面上意味着有3个不同的JavaScript版本，IE的JScript、网景的JavaScript和ScriptEase中的CEnvi。当时还没有标准规定JavaScript的语法和特性。随着版本不同暴露的问题日益加剧，JavaScript的规范化最终被提上日程。1997年，以JavaScript1.1为蓝本的建议被提交给了欧洲计算机制造商协会（ECMA，European Computer Manufactures Association）该协会指定39号技术委员会负责将其进行标准化，TC39来此各大公司以及其他关注脚本语言发展的公司的程序员组成，经过数月的努力完成了ECMA-262——定义了一种名为ECMAScript的新脚本语言的标准。第二年，ISO/IEC（国标标准化组织和国际电工委员会）也采用了ECMAScript作为标准（即ISO/IEC-16262）。</p>
-            <table>
+            <p class="text">JavaScript诞生于1995年。起初它的主要目的是处理以前由服务器端负责的一些表单验证。1995网景公司发布LiveScript,Netscape为了搭上媒体热炒Java的顺风车，临时把LiveScript改名为JavaScript，所以从本质上来说JavaScript和Java没什么关系。JavaScript 1.0获得了巨大的成功，Netscape随后在Netscape Navigator 3（网景浏览器）中发布了JavaScript 1.1。之后作为竞争对手的微软在自家的IE3中加入了名为JScript（名称不同是为了避免侵权）的JavaScript实现。而此时市面上意味着有3个不同的JavaScript版本，IE的JScript、网景的JavaScript和ScriptEase中的CEnvi。当时还没有标准规定JavaScript的语法和特性。随着版本不同暴露的问题日益加剧，JavaScript的规范化最终被提上日程。1997年，以JavaScript1.1为蓝本的建议被提交给了欧洲计算机制造商协会（ECMA，European Computer Manufactures Association）该协会指定39号技术委员会负责将其进行标准化，TC39来此各大公司以及其他关注脚本语言发展的公司的程序员组成，经过数月的努力完成了ECMA-262——定义了一种名为ECMAScript的新脚本语言的标准。第二年，ISO/IEC（国标标准化组织和国际电工委员会）也采用了ECMAScript作为标准（即ISO/IEC-16262）。</p>
+            <table class="table">
                 <tr>
-                    <td>版本</td>
-                    <td>发表日期</td>
+                    <td width="100px">版本</td>
+                    <td width="200px">发表日期</td>
                     <td>与前版本的差异</td>
                 </tr>
                 <tr>
@@ -168,7 +197,7 @@
             </table>
         </div>
     </div>
-    <div id="epoch_list_2" class="step content-item" data-x="-2000" data-y="0" data-rotate="180">
+    <div id="epoch_list_2" class="step content-item" data-x="-1000" data-y="0" data-rotate="180">
         <h4 class="item-title">前端的各个时代</h4>
         <div class="content t-center">
             <ul class="title-list">
@@ -180,7 +209,7 @@
             </ul>
         </div>
     </div>
-    <div id="epoch_1" class="step content-item" data-x="-4000" data-y="1500">
+    <div id="epoch_1" class="step content-item" data-x="-3000" data-y="1500">
         <h4 class="item-title">简单明快的早期时代</h4>
         <div class="content flex flex-row">
             <div class="flex-1 t-center">
@@ -196,7 +225,7 @@
             </div>
         </div>
     </div>
-    <div id="epoch_2" class="step content-item" data-x="-2000" data-y="1500">
+    <div id="epoch_2" class="step content-item" data-x="-1000" data-y="1500">
         <h4 class="item-title">后端为主的 MVC 时代</h4>
         <div class="content flex flex-row">
             <div class="flex-1 t-center">
@@ -212,7 +241,7 @@
             </div>
         </div>
     </div>
-    <div id="epoch_3" class="step content-item" data-x="0" data-y="1500">
+    <div id="epoch_3" class="step content-item" data-x="1000" data-y="1500">
         <h4 class="item-title">Ajax 带来的 SPA 时代</h4>
         <div class="content flex flex-row">
             <div class="flex-1 t-center">
@@ -228,14 +257,14 @@
             </div>
         </div>
     </div>
-    <div id="epoch_4" class="step content-item" data-x="2000" data-y="1500">
+    <div id="epoch_4" class="step content-item" data-x="3000" data-y="1500">
         <h4 class="item-title">前端为主的 MV* 时代</h4>
         <div class="content flex flex-row">
             <div class="flex-1 t-center">
                 <img src="images/img4.jpeg" alt="">
             </div>
             <div class="flex-1">
-                <p>为了降低前端开发复杂度，除了 Backbone，还有大量框架涌现，比如 EmberJS、KnockoutJS、AngularJS 等等。这些框架总的原则是先按类型分层，比如 Templates、Controllers、Models，然后再在层内做切分，如下图：</p>
+                <p>为了降低前端开发复杂度，除了 Backbone，还有大量框架涌现，比如 EmberJS、KnockoutJS、AngularJS 等等。这些框架总的原则是先按类型分层，比如 Templates、Controllers、Models，然后再在层内做切分，如下左图：</p>
                 <ul class="inline-block">
                     <li style="list-style: none">好处：</li>
                     <li>前后端职责很清晰。</li>
@@ -251,7 +280,7 @@
             </div>
         </div>
     </div>
-    <div id="epoch_5" class="step content-item" data-x="4000" data-y="1500">
+    <div id="epoch_5" class="step content-item" data-x="5000" data-y="1500">
         <h4 class="item-title">Node 带来的全栈时代</h4>
         <div class="content flex flex-row">
             <div class="flex-1 t-center">
@@ -287,35 +316,8 @@
     </div>
     <section id="overview" class="step" data-x="2500" data-y="1500" data-scale="10"></section>
 </div>
+<script src="../common/common.js"></script>
 <script src="../lib/impress/impress.js"></script>
-<script>
-    function createStyle() {
-        var width = document.body.clientWidth;
-        var height = document.body.clientHeight;
-        var nod = document.createElement('style'),
-        str = '.step{width:'+parseInt(width*0.98)+'px;height:'+parseInt(height*0.96)+'px;}';
-        console.log(width);
-        nod.type='text/css';
-        if(nod.styleSheet){         //ie下
-            nod.styleSheet.cssText = str;
-        } else {
-            nod.innerHTML = str;       //或者写成 nod.appendChild(document.createTextNode(str))
-        }
-        document.getElementsByTagName('head')[0].appendChild(nod);
-    }
-    createStyle();
-
-   impress().init();
-    var rootElement = document.getElementById( "impress" );
-    rootElement.addEventListener( "impress:stepenter", function(event) {
-        var currentStep = event.target;
-        console.log( "Entered the Step Element '" + currentStep.id + "'" );
-    });
-    rootElement.addEventListener( "impress:stepleave", function(event) {
-        var currentStep = event.target;
-        var nextStep = event.detail.next;
-        console.log( "Left the Step Element '" + currentStep.id + "' and about to enter '" + nextStep.id );
-    });
-</script>
+<script src="index.js"></script>
 </body>
 </html>

@@ -1,0 +1,88 @@
+#epoch_list .text{
+    font-size: 24px;
+    transition: scale 1s;
+    text-align: left;
+    line-height: 1.8;
+    transition: all 1s;
+}
+#epoch_list .table{
+    transform: scale(0);
+    transition: all 1.2s;
+}
+
+#epoch_list.st-2 .text{
+    font-size: 12px;
+}
+#epoch_list.st-2 .table{
+    transform: scale(1);
+}
+
+
+#browser_war .title-list .item-1{
+    transform: translate(0,0);
+    transition: all 1s;
+}
+#browser_war .title-list .item-2{
+    transform: translate(-3000px,0);
+    transition: all 1s;
+}
+#browser_war .title-list p{
+    font-size: 20px;
+    padding: 10px 0 20px 0;
+}
+#browser_war.st-2 .title-list .item-2{
+    transform: translate(0,0);
+}
+
+#browser_war .title-list .item-3{
+    transform: translate(3000px,0);
+    transition: all 1s;
+}
+
+#browser_war.st-3 .title-list .item-3{
+    transform: translate(0,0);
+}
+
+#ie_version .content li{
+    transform: translate(0,2000px);
+    transition: all 1s;
+}
+#ie_version.st-1 .content li:nth-child(1){
+    transform: translate(0,0);
+}
+#ie_version.st-2 .content li:nth-child(2){
+    transform: translate(0,0);
+}
+#ie_version.st-3 .content li:nth-child(3){
+    transform: translate(0,0);
+}
+#ie_version.st-4 .content li:nth-child(4){
+    transform: translate(0,0);
+}
+#ie_version.st-5 .content li:nth-child(5){
+    transform: translate(0,0);
+}
+#ie_version.st-6 .content li:nth-child(6){
+    transform: translate(0,0);
+}
+#ie_version.st-7 .content li:nth-child(7){
+    transform: translate(0,0);
+}
+#ie_version.st-8 .content li:nth-child(8){
+    transform: translate(0,0);
+}
+#ie_version.st-9 .content li:nth-child(9){
+    transform: translate(0,0);
+}
+#ie_version.st-10 .content li:nth-child(10){
+    transform: translate(0,0);
+}
+#ie_version.st-11 .content li:nth-child(11){
+    transform: translate(0,0);
+}
+#ie_version.st-12 .content li:nth-child(12){
+    transform: translate(0,0);
+}
+#ie_version.st-13 .content li:nth-child(13){
+    transform: translate(0,0);
+}
