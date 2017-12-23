@@ -3,11 +3,11 @@
     transition: scale 1s;
     text-align: left;
     line-height: 1.8;
-    transition: all 1s;
+    transition: all 1s cubic-bezier(.03,.75,.42,1.44);
 }
 #epoch_list .table{
     transform: scale(0);
-    transition: all 1.2s;
+    transition: all 1.2s cubic-bezier(.03,.75,.42,1.44);
 }
 
 #epoch_list.st-2 .text{
@@ -20,11 +20,11 @@
 
 #browser_war .title-list .item-1{
     transform: translate(0,0);
-    transition: all 1s;
+    transition: all 1s cubic-bezier(.03,.75,.42,1.44);
 }
 #browser_war .title-list .item-2{
     transform: translate(-3000px,0);
-    transition: all 1s;
+    transition: all 1s cubic-bezier(.03,.75,.42,1.44);
 }
 #browser_war .title-list p{
     font-size: 20px;
@@ -36,7 +36,7 @@
 
 #browser_war .title-list .item-3{
     transform: translate(3000px,0);
-    transition: all 1s;
+    transition: all 1s cubic-bezier(.03,.75,.42,1.44);
 }
 
 #browser_war.st-3 .title-list .item-3{
@@ -45,7 +45,7 @@
 
 #ie_version .content li{
     transform: translate(0,2000px);
-    transition: all 1s;
+    transition: all 1s cubic-bezier(.3,.73,.4,1.11);
 }
 #ie_version.st-1 .content li:nth-child(1){
     transform: translate(0,0);

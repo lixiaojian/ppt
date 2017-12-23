@@ -16,7 +16,7 @@
         }else if(id == 'thanks'){
             event.target.className = 'step ths';
         }else{
-            event.target.className = 'step content-item';
+            event.target.className = 'step content-item st-1';
             currentStep.setAttribute('data-index',1);
         }
     });
