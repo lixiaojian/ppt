@@ -10,6 +10,26 @@
     transition: all 1.2s cubic-bezier(.03,.75,.42,1.44);
 }
 
+#epoch_list_2 .title-list li{
+    transform: translate(0,-2000px);
+    transition: all 1s cubic-bezier(.3,.73,.4,1.11);
+}
+#epoch_list_2.st-1 .title-list li:nth-child(1){
+    transform: translate(0,0);
+}
+#epoch_list_2.st-2 .title-list li:nth-child(2){
+    transform: translate(0,0);
+}
+#epoch_list_2.st-3 .title-list li:nth-child(3){
+    transform: translate(0,0);
+}
+#epoch_list_2.st-4 .title-list li:nth-child(4){
+    transform: translate(0,0);
+}
+#epoch_list_2.st-5 .title-list li:nth-child(5){
+    transform: translate(0,0);
+}
+
 #epoch_list.st-2 .text{
     font-size: 12px;
 }
@@ -85,4 +105,25 @@
 }
 #ie_version.st-13 .content li:nth-child(13){
     transform: translate(0,0);
+}
+#faq .content .title-list{
+    font-size: 24px;
+    font-weight: 700;
+}
+#faq .content .title-list p{
+    font-size: 20px;
+    font-weight: normal;
+}
+#faq .content .title-list li{
+    transform: translateY(-2000px);
+    transition: all 1s cubic-bezier(.03,.75,.42,1.44);
+}
+#faq.st-1 .content .title-list li:nth-child(1){
+    transform: translateY(0);
+}
+#faq.st-2 .content .title-list li:nth-child(2){
+    transform: translateY(0);
+}
+#faq.st-3 .content .title-list li:nth-child(3){
+    transform: translateY(0);
 }
