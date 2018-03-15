@@ -49,6 +49,12 @@ table td{
 .c-red{
     color: red;
 }
+.title{
+    font-size: 24px;
+}
+.title h2{
+    font-size: 2em;
+}
 .step{
     display: flex;
     flex-direction: column;
@@ -86,8 +92,8 @@ table td{
     opacity: 1;
     z-index: 100;
 }
-.step.wellcome,.step.ths{
-    background-image: linear-gradient(135deg, #01a5e3 0,#0079c2 50%,#0085cf 50%, #008ed8 80%,#e4e4e4 80%);
+.step.wellcome .cover-content{
+    background-color: #f7b500;
 }
 .impress-on-overview .step {
     opacity: 1;
@@ -96,7 +102,7 @@ table td{
 .step .cover-content{
     display: flex;
     align-items:center;
-    height: 72%;
+    height: 75%;
     line-height: 1.5;
     color: #fff;
 }
@@ -106,28 +112,46 @@ table td{
 }
 .step .cover-content .author{
     width: 100%;
-    position: absolute;
-    bottom: 34%;
-    left: 50%;
-    transform: translate(-50%);
+    text-align: center;
 }
 .step .cover-content .thanks{
-    padding-left: 20%;
+    /*padding-left: 20%;*/
+    color: #000;
+    text-align: center;
     font-size: 60px;
+    width: 100%;
 }
 .step .cover-footer{
-    height: 28%;
-    background: url("../common/images/footer.png") no-repeat 15% center;
-    background-color: rgba(255,255,255,.5);
+    box-sizing: border-box;
+    height: 25%;
+    background-color: #efefef;
+    position: relative;
+    padding: 1% 0;
 }
+.cover-footer-content{
+    height: 100%;
+    background: url("../common/images/footer.png") no-repeat 15% center;
+    background-size: contain;
+}
+.step .cover-footer:after{
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at top left, transparent 100px, #efefef 0) top left;
+    position: absolute;
+    right: 0;
+    top: -100px;
+}
+
 .step.content-item .item-title{
     font-size: 30px;
-    color: rgb(0,153,255);
+    color: #fff;
     font-weight: 700;
-    background-color: rgb(220,222,221);
+    background-color: #f7b500;
     margin: 20px 0;
     padding: 15px 0 15px 40px;
-    background-image: url("images/header.png"),linear-gradient(135deg, transparent 0,transparent 65%,rgb(201,201,203) 65%, rgb(201,201,203) 70%,rgb(0,127,204) 70%,rgb(0,127,204) 94%,rgb(255,255,255) 94%);
+    background-image: url("images/header.png"),linear-gradient(135deg, transparent 0,transparent 60%,rgb(201,201,203) 60%, rgb(201,201,203) 65%,rgb(220,222,221) 65%,rgb(220,222,221) 94%,rgb(255,255,255) 94%);
     background-repeat: no-repeat;
     background-position: 91% center;
 }
@@ -143,4 +167,26 @@ table td{
 }
 .step.content-item .title-list li{
     padding: 15px 0;
+}
+.step.ths{
+    /*width: 100%;*/
+    position: relative;
+}
+.thanks img{
+    width: 20%;
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 1;
+}
+.step.ths .cover-footer{
+    height: 15%;
+    background-color: #f7b500;
+}
+.step.ths .cover-content{
+    height: 85%;
+}
+.step.ths .cover-footer:after{
+    background: radial-gradient(circle at top left, transparent 100px, #f7b500 0) top left;
 }
