@@ -21,7 +21,7 @@ ul{
     padding-left: 20px;
 }
 li{
-    padding: 5px 0;
+    padding: 2px 0;
 }
 table{
     border-spacing: 0;
@@ -63,7 +63,7 @@ table td{
     box-shadow: 0 0 20px rgba(0, 0, 0, .5);
     color: #333;
     font-size: 20px;
-    line-height: 36px;
+    line-height: 1.5;
     letter-spacing: -1px;
     overflow: hidden;
     opacity: 0;
@@ -160,6 +160,7 @@ table td{
 }
 .step.content-item .content img{
     max-height: 100%;
+    max-width: 100%;
 }
 .step.content-item .title-list{
     list-style: none;

@@ -6,8 +6,16 @@
     transition: all 1s cubic-bezier(.03,.75,.42,1.44);
 }
 #epoch_list .table{
+    line-height: 1.5;
     transform: scale(0);
     transition: all 1.2s cubic-bezier(.03,.75,.42,1.44);
+}
+#epoch_list.st-2 .text{
+    font-size: 12px;
+    line-height: 1.4;
+}
+#epoch_list.st-2 .table{
+    transform: scale(1);
 }
 
 #epoch_list_2 .title-list li{
@@ -30,12 +38,7 @@
     transform: translate(0,0);
 }
 
-#epoch_list.st-2 .text{
-    font-size: 12px;
-}
-#epoch_list.st-2 .table{
-    transform: scale(1);
-}
+
 
 
 #browser_war .title-list .item-1{
