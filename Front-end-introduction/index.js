@@ -22,7 +22,7 @@
     });
 
     var oldKeyUp = document.onkeyup;
-    var isList = ['epoch_list','epoch_list_2','browser_war','ie_version','faq'];
+    var isList = ['epoch_list','epoch_list_2','browser_war','ie_version','faq','browser_kernel'];
     document.onkeyup = function (e) {
         //如果window.event对象存在，就以此事件对象为准
         if (window.event){

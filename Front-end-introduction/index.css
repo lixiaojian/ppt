@@ -1,3 +1,30 @@
+#browser_kernel .content li{
+    transform: scale(0);
+    transition: transform 1s;
+    transform-origin: left center;
+    font-size: 24px;
+    line-height: 2;
+}
+#browser_kernel.st-1 .content li:nth-child(1){
+    transform: scale(1);
+}
+#browser_kernel.st-2 .content li:nth-child(2){
+    transform: scale(1);
+}
+#browser_kernel.st-3 .content li:nth-child(3){
+    transform: scale(1);
+}
+#browser_kernel.st-4 .content li:nth-child(4){
+    transform: scale(1);
+}
+#browser_kernel.st-5 .content li:nth-child(5){
+    transform: scale(1);
+}
+#browser_kernel.st-6 .content li:nth-child(6){
+    transform: scale(1);
+}
+
+
 #epoch_list .text{
     font-size: 24px;
     transition: scale 1s;
