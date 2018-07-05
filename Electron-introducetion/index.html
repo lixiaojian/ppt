@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <meta http-equiv="Cache-Control" content="max-age=300"/>
+    <title>Electron入门</title>
+    <link rel="stylesheet" href="../common/common.css">
+    <link rel="stylesheet" href="../lib/rainbow/rainbow.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="impress">
+    <!--封面-->
+    <div id="cover" class="step wellcome" data-x="-3000" data-y="-1500" >
+        <div class="cover-content">
+            <div class="title">
+                <h2 style="padding-bottom: 4%">Electron入门</h2>
+                <div class="author">
+                    <div>IT总部数据云公司视频云中心前台开发部</div>
+                    <div>李晓健 2018-03</div>
+                </div>
+            </div>
+        </div>
+        <div class="cover-footer">
+            <div class="cover-footer-content"></div>
+        </div>
+    </div>
+    <div id="what" class="step content-item" data-index="0" data-max="5" data-x="-1000" data-y="-1500" data-rotate-x="180">
+        <h4 class="item-title">Electron简介</h4>
+        <div class="content">
+            <p>
+                Electron 是一个使用 JavaScript, HTML 和 CSS 等 Web 技术构建跨平台的桌面应用
+            </p>
+            <ul class="list-panel">
+                <li class="item-1">使用纯前端技术</li>
+                <li class="item-2">开源</li>
+                <li class="item-3">跨平台</li>
+                <li class="item-4">使用Chromium做渲染</li>
+                <li class="item-5">可以直接使用Node.js</li>
+            </ul>
+        </div>
+    </div>
+    <div id="concept" data-index="0" data-max="3" class="step content-item" data-x="1000" data-y="-1500">
+        <h4 class="item-title">比较重要的概念</h4>
+        <div class="content">
+            <p>
+                Electron中有一些比较重要的概念，搞清楚这些概念，才能更好的使用Electron
+            </p>
+            <ul class="list-panel">
+                <li class="item-1">Main process（主进程，只有一个）</li>
+                <li class="item-2">Renderer Process（渲染进程，可以有多个）</li>
+                <li class="item-3">IPC（Inter-Process Communication，进程中的通信）</li>
+            </ul>
+        </div>
+    </div>
+    <div id="modular" data-index="0" data-max="12" class="step content-item" data-x="1500" data-y="-1500">
+        <h4 class="item-title">常用的功能模块</h4>
+        <div class="content">
+            <p>
+                Electron中有很多的功能模块，以下列举几个常用的模块
+            </p>
+            <ul class="list-panel">
+                <li class="item-1">app（控制应用程序的事件生命周期,用于监听应用的的事件：主进程）</li>
+                <li class="item-2">BrowserWindow（创建和控制浏览器窗口：主进程）</li>
+                <li class="item-3">ipcMain（从主进程到渲染进程的异步通信：主进程）</li>
+                <li class="item-4">ipcRenderer（从渲染进程到主进程的异步通信：渲染进程）</li>
+                <li class="item-5">remote（在渲染进程中使用主进程模块： 渲染进程）</li>
+                <li class="item-6">dialog（显示用于打开和保存文件、警报等的本机系统对话框：主进程）</li>
+                <li class="item-7">crashReporter（将崩溃日志提交给远程服务器）</li>
+                <li class="item-8">globalShortcut（当应用程序没有键盘焦点时监听全局键盘事件：主进程）</li>
+                <li class="item-9">Menu（创建原生应用菜单和上下文菜单：主进程）</li>
+                <li class="item-10">desktopCapturer（可以访问那些用于从桌面上捕获音频和视频的媒体源信息：渲染进程）</li>
+                <li class="item-11">net（使用Chromium的原生网络库发出HTTP / HTTPS请求：主进程）</li>
+                <li class="item-12">autoUpdater（使应用程序能够自动更新：主进程）</li>
+            </ul>
+        </div>
+    </div>
+    <div id="api" data-index="0" data-max="6" class="step content-item" data-x="3000" data-y="0" data-z="1000">
+        <h4 class="item-title">API的调用</h4>
+        <div class="content">
+            <p>
+                在Electron应用中可以调用Electron自身的模块功能和Node.js的模块功能
+            </p>
+            <div class="content-item">
+               <pre><code data-language="JavaScript">
+/***** 调用Electron的API *****/
+//在主进程中直接引入主进程的模块
+const { BrowserWindow } = require('electron')
+const win = new BrowserWindow()
+
+//渲染进程中引入主进程的模块
+const { remote } = require('electron')
+const { BrowserWindow } = remote
+const win = new BrowserWindow()
+
+/***** 调用Node.js的API *****/
+const fs = require('fs')
+const root = fs.readdirSync('/')
+console.log(root)
+                </code></pre>
+            </div>
+        </div>
+    </div>
+    <div id="install" data-index="0" data-max="3" class="step content-item" data-x="1000" data-y="0" data-z="1000">
+        <h4 class="item-title">Electron的安装</h4>
+        <div class="content">
+            <p>
+                Electron是一个Node.js的模块，所以他可以通过npm来安装
+            </p>
+            <ul class="list-panel">
+                <li class="item-1">安装Node.js (直接下载安装程序，一直下一步就行了)</li>
+                <li class="item-2">进入到项目目录，初始化项目 (根据提示输入项目的相关信息)
+                    <div class="content-item">
+                       <pre><code data-language="Shell">
+npm init
+                        </code></pre>
+                    </div>
+                </li>
+                <li class="item-3">安装Electron
+                    <div class="content-item">
+                       <pre><code data-language="Shell">
+npm install electron --save
+                        </code></pre>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="init" data-index="0" data-max="6" class="step content-item" data-x="-1000" data-y="0" data-z="0">
+        <h4 class="item-title">Electrona项目的搭建</h4>
+        <div class="content">
+            <ul class="list-panel">
+                <li class="item-1">创建内容页面 index.html和入口文件 app.js </li>
+                <li class="item-2">编写启动文件
+                    <div class="content-item">
+                       <pre><code data-language="JavaScript">
+const { app,BrowserWindow} = require('electron')
+app.on('ready', ()=>{
+    let mainWindow = new BrowserWindow({
+        width: 800,
+        height: 600,
+        icon:'logo.ico'
+    });
+    mainWindow.loadURL(`file://${__dirname}/index.html`)
+    mainWindow.on('closed', function () {
+        mainWindow = null
+    })
+})
+                        </code></pre>
+                    </div>
+                </li>
+                <li class="item-3">启动应用
+                    <div class="content-item">
+                       <pre><code data-language="Shell">
+electron .
+                        </code></pre>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="demo" class="step content-item" data-x="-3000" data-y="0" data-z="0">
+        <h4 class="item-title">Electron Demo</h4>
+        <div class="content">
+            <p>一个可拍照保存的桌面应用</p>
+            <pre><code data-language="html">
+&lt;div&gt;
+    &lt;video src="" id="video"&gt;&lt;/video&gt;
+    &lt;canvas width="400" height="300" id="canvas"&gt;&lt;/canvas&gt;
+    &lt;div&gt;
+        &lt;button id="button"&gt;打开摄像头&lt;/button&gt;
+        &lt;button id="takephoto"&gt;拍照&lt;/button&gt;
+        &lt;button id="saveImage"&gt;保存照片&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+            <br>
+            <pre><code data-language="JavaScript">
+const {dialog} = require('electron').remote
+const fs = require('fs');
+const button = document.querySelector('#button');
+const takephoto = document.querySelector('#takephoto');
+const saveImage = document.querySelector('#saveImage')
+const video = document.querySelector('#video');
+const canvas = document.querySelector('#canvas');
+const ctx = canvas.getContext('2d');
+const mediaConfig = {
+    video: true
+}
+//点击打开摄像头的按钮
+button.addEventListener('click',e=>{
+    navigator.mediaDevices.getUserMedia(mediaConfig)
+        .then(function(stream) {
+            video.srcObject = stream;
+            video.onloadedmetadata = function(e) {
+                video.play();
+            };
+        })
+        .catch(function(err) {
+            alert('打开挺像头失败')
+        });
+})
+
+//点击拍照按钮
+takephoto.addEventListener('click',e=>{
+    ctx.drawImage(video,0,0,400,300);
+})
+//点击保存图片按钮
+saveImage.addEventListener('click',e=>{
+    let dataURL = canvas.toDataURL('image/png');
+    var regex = /^data:.+\/(.+);base64,(.*)$/;
+    if(dataURL){
+        var matches = dataURL.match(regex);
+        var buffer = new Buffer(matches[2], 'base64');
+        fs.writeFile(Date.now()+'.' + matches[1], buffer,err=>{
+            if(err){
+                dialog.showErrorBox("错误提示", '图片保存失败')
+            }else{
+                dialog.showMessageBox({
+                    type:'info',
+                    title:'提示信息',
+                    message:'图片保存成功',
+                })
+            }
+        });
+    }
+})
+            </code></pre>
+        </div>
+    </div>
+    <div id="build" data-index="0" data-max="3" class="step content-item" data-x="-3000" data-y="1500" data-z="0">
+        <h4 class="item-title">Electrona项目的构建</h4>
+        <div class="content">
+            <ul class="list-panel">
+                <li class="item-1">安装打包模块 electron-builder
+                    <pre><code data-language="JavaScript">
+npm install electron-builder --save-dev
+                        </code></pre>
+                </li>
+                <li class="item-2">在package.json中添加打包命令及配置(以下只列出window平台的命令，其他平台请参考文档)
+                    <div class="content-item">
+                       <pre><code data-language="json">
+"scripts": {
+    "build-win": "electron-builder --win --x64"
+},
+"build": {
+    "productName": "demo",
+    "win": {
+      "icon": "logo.png",
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+}
+                        </code></pre>
+                    </div>
+                </li>
+                <li class="item-3">运行打包命令，就会生成相应平台的安装程序
+                    <div class="content-item">
+                       <pre><code data-language="Shell">
+npm run build-win
+                        </code></pre>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--感谢-->
+    <div id="thanks" class="step ths" data-x="-1000" data-y="1500">
+        <div class="cover-content">
+            <div class="thanks">
+                <h4 style="padding-bottom: 16%">谢谢</h4>
+                <img style="" src="../common/images/lion-icon.png" alt="">
+            </div>
+        </div>
+        <div class="cover-footer"></div>
+    </div>
+    <section id="overview" class="step" data-x="2500" data-y="1500" data-scale="10"></section>
+</div>
+<script src="../lib/rainbow/rainbow-custom.min.js"></script>
+<script src="../lib/impress/impress.js"></script>
+<script src="../common/common.js"></script>
+
+<script>
+    var isList = ['what','concept','modular','install','init','build'];
+    changeStep(isList);
+</script>
+</body>
+</html>

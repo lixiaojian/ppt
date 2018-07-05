@@ -1,0 +1,86 @@
+
+.content li{
+    transition: all 1s cubic-bezier(.3,.73,.4,1.11);
+}
+#what .content li{
+    transform: translate(0,-2000px);
+}
+
+#what.st-1 li:nth-child(1),
+#what.st-2 li:nth-child(2),
+#what.st-3 li:nth-child(3),
+#what.st-4 li:nth-child(4),
+#what.st-5 li:nth-child(5){
+    transform: translate(0,0);
+}
+#what .list-panel,
+
+#concept .content{
+    overflow: hidden;
+}
+#concept .list-panel{
+    padding-left: 80px;
+    line-height: 50px;
+    font-size: 30px;
+}
+#concept .content li{
+    transform: translate(0,2000px);
+}
+#concept.st-1 li:nth-child(1),
+#concept.st-2 li:nth-child(2),
+#concept.st-3 li:nth-child(3){
+    transform: translate(0,0);
+}
+
+#modular .list-panel,
+#install .list-panel{
+    padding-left: 80px;
+    line-height: 32px;
+}
+
+#modular .content li{
+    transform: translate(-2000px,0);
+}
+#modular.st-1 li:nth-child(1),
+#modular.st-2 li:nth-child(2),
+#modular.st-3 li:nth-child(3),
+#modular.st-4 li:nth-child(4),
+#modular.st-5 li:nth-child(5),
+#modular.st-6 li:nth-child(6),
+#modular.st-7 li:nth-child(7),
+#modular.st-8 li:nth-child(8),
+#modular.st-9 li:nth-child(9),
+#modular.st-10 li:nth-child(10),
+#modular.st-11 li:nth-child(11),
+#modular.st-12 li:nth-child(12){
+    transform: translate(0,0);
+}
+
+#install .content li{
+    transform: scale(0);
+}
+#install.st-1 li:nth-child(1),
+#install.st-2 li:nth-child(2),
+#install.st-3 li:nth-child(3){
+    transform: scale(1);
+}
+
+
+#init .content li{
+    transform: scale(0);
+}
+
+#init.st-1 li:nth-child(1),
+#init.st-2 li:nth-child(2),
+#init.st-3 li:nth-child(3){
+    transform: scale(1);
+}
+
+#build .content li{
+    transform:translate(-110%,0) rotate(180deg);
+}
+#build.st-1 li:nth-child(1),
+#build.st-2 li:nth-child(2),
+#build.st-3 li:nth-child(3){
+    transform: translate(0,0);
+}
